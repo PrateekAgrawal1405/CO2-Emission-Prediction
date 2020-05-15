@@ -100,7 +100,10 @@ print("Mean absolute error: %.2f" % np.mean(np.absolute(test_y_hat - test_y)))
 print("Residual sum of squares (MSE): %.2f" % np.mean((test_y_hat - test_y) ** 2))
 print("R2-score: %.2f" % r2_score(test_y_hat, test_y))
 
-# R-squared is not error, but is a popular metric for accuracy of your model. It represents how close the data are to the fitted regression line. The higher the R-squared, the better the model fits your data. Best possible score is 1.0 and it can be negative (because the model can be arbitrarily worse).
+# R-squared is not error, but is a popular metric for accuracy of your model.
+ # It represents how close the data are to the fitted regression line. 
+ # The higher the R-squared, the better the model fits your data.
+  # Best possible score is 1.0 and it can be negative (because the model can be arbitrarily worse).
 
 plt.plot(test_y)
 plt.plot(test_y_hat)
